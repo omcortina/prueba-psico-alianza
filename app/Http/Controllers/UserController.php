@@ -77,7 +77,7 @@ class UserController extends Controller
 
                     if($save_all){
                         DB::commit();
-                        $message = "Usuario actualizado correctamente";
+                        $message = "Usuario guardado correctamente";
                         session()->flash('message_success_user_create', $message);
                     }else{
                         $message = "Ocurrio un error, intente nuevamente";
